@@ -1,0 +1,150 @@
+<?xml version="1.0" ?>
+<manifest>
+
+  <remote name="apitrace" fetch="git://github.com/apitrace/" />
+  <remote name="b2g" fetch="git://github.com/mozilla-b2g/" />
+  <remote name="mozilla" fetch="git://github.com/mozilla/" />
+  <remote name="mozillaorg" fetch="https://git.mozilla.org/releases" />
+  <remote name="sprd-aosp" fetch="http://sprdsource.spreadtrum.com:8085/b2g/android" />
+  <remote name="sprd-b2g" fetch="http://sprdsource.spreadtrum.com:8085/b2g" />
+
+  <default revision="sprdb2g_gonk4.4" remote="sprd-aosp" />
+
+  <!-- B2G/Gonk specific things -->
+  <project path="build" name="platform/build" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
+  <project path="dalvik" name="fake-libdvm" remote="b2g" revision="v1.4" />
+  <project path="external/apitrace" name="apitrace" remote="apitrace" revision="master" />
+  <project path="external/moztt" name="moztt" remote="b2g" revision="v1.4" />
+  <project path="external/valgrind" name="platform/external/valgrind" />
+  <project path="gaia" name="gaia.git" remote="mozillaorg" revision="v1.4" />
+  <project path="gecko" name="gecko.git" remote="mozillaorg" revision="v1.4" />
+  <project path="gonk-misc" name="gonk-misc" remote="b2g" revision="v1.4" />
+  <project path="librecovery" name="librecovery" remote="b2g" revision="v1.4" />
+  <project path="rilproxy" name="rilproxy" remote="b2g" revision="v1.4" />
+
+  <!-- Stock Android things -->
+  <project path="abi/cpp" name="platform/abi/cpp" />
+  <project path="bionic" name="platform/bionic" />
+  <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" />
+  <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" />
+  <project path="bootable/recovery" name="platform/bootable/recovery" />
+  <project path="chipram" name="chipram" revision="sprdchipram" />
+  <project path="device/common" name="device/common" />
+  <project path="device/sample" name="device/sample" />
+  <project path="docs/source.android.com" name="platform/docs/source.android.com" />
+  <project path="external/aac" name="platform/external/aac" />
+  <project path="external/bison" name="platform/external/bison" />
+  <project path="external/bluetooth/bluedroid" name="platform/external/bluetooth/bluedroid" />
+  <project path="external/bsdiff" name="platform/external/bsdiff" />
+  <project path="external/bzip2" name="platform/external/bzip2" />
+  <project path="external/checkpolicy" name="platform/external/checkpolicy" />
+  <project path="external/dhcpcd" name="platform/external/dhcpcd" />
+  <project path="external/dnsmasq" name="platform/external/dnsmasq" />
+  <project path="external/dropbear" name="platform/external/dropbear" />
+  <project path="external/e2fsprogs" name="platform/external/e2fsprogs" />
+  <project path="external/elfutils" name="platform/external/elfutils" />
+  <project path="external/expat" name="platform/external/expat" />
+  <project path="external/fdlibm" name="platform/external/fdlibm" />
+  <project path="external/flac" name="platform/external/flac" />
+  <project path="external/freetype" name="platform/external/freetype" />
+  <project path="external/gcc-demangle" name="platform/external/gcc-demangle" />
+  <project path="external/genext2fs" name="platform/external/genext2fs" />
+  <project path="external/giflib" name="platform/external/giflib" />
+  <project path="external/gtest" name="platform/external/gtest" />
+  <project path="external/harfbuzz" name="platform/external/harfbuzz" />
+  <project path="external/harfbuzz_ng" name="platform/external/harfbuzz_ng" />
+  <project path="external/icu4c" name="platform/external/icu4c" />
+  <project path="external/iproute2" name="platform/external/iproute2" />
+  <project path="external/ipsec-tools" name="platform/external/ipsec-tools" />
+  <project path="external/iptables" name="platform/external/iptables" />
+  <project path="external/iputils" name="platform/external/iputils" />
+  <project path="external/jack" name="platform/external/jack" />
+  <project path="external/jhead" name="platform/external/jhead" />
+  <project path="external/jpeg" name="platform/external/jpeg" />
+  <project path="external/junit" name="platform/external/junit" />
+  <project path="external/libgsm" name="platform/external/libgsm" />
+  <project path="external/liblzf" name="platform/external/liblzf" />
+  <project path="external/libnfc-nci" name="platform/external/libnfc-nci" />
+  <project path="external/libnfc-nxp" name="platform/external/libnfc-nxp" />
+  <project path="external/libnl-headers" name="platform/external/libnl-headers" />
+  <project path="external/libogg" name="platform/external/libogg" />
+  <project path="external/libpcap" name="platform/external/libpcap" />
+  <project path="external/libpng" name="platform/external/libpng" />
+  <project path="external/libppp" name="platform/external/libppp" />
+  <project path="external/libselinux" name="platform/external/libselinux" />
+  <project path="external/libsepol" name="platform/external/libsepol" />
+  <project path="external/libvpx" name="platform/external/libvpx" />
+  <project path="external/linux-tools-perf" name="platform/external/linux-tools-perf" />
+  <project path="external/lzma" name="platform/external/lzma" />
+  <project path="external/mdnsresponder" name="platform/external/mdnsresponder" />
+  <project path="external/mksh" name="platform/external/mksh" />
+  <project path="external/netcat" name="platform/external/netcat" />
+  <project path="external/netperf" name="platform/external/netperf" />
+  <project path="external/openssl" name="platform/external/openssl" />
+  <project path="external/protobuf" name="platform/external/protobuf" />
+  <project path="external/safe-iop" name="platform/external/safe-iop" />
+  <project path="external/scrypt" name="platform/external/scrypt" />
+  <project path="external/sepolicy" name="platform/external/sepolicy" />
+  <project path="external/sfntly" name="platform/external/sfntly" />
+  <project path="external/skia" name="platform/external/skia" />
+  <project path="external/sonivox" name="platform/external/sonivox" />
+  <project path="external/speex" name="platform/external/speex" />
+  <project path="external/sqlite" name="platform/external/sqlite" />
+  <project path="external/stlport" name="platform/external/stlport" />
+  <project path="external/strace" name="platform/external/strace" />
+  <project path="external/svox" name="platform/external/svox" />
+  <project path="external/tagsoup" name="platform/external/tagsoup" />
+  <project path="external/tcpdump" name="platform/external/tcpdump" />
+  <project path="external/tinyalsa" name="platform/external/tinyalsa" />
+  <project path="external/tinycompress" name="platform/external/tinycompress" />
+  <project path="external/tinyxml2" name="platform/external/tinyxml2" />
+  <project path="external/tinyxml" name="platform/external/tinyxml" />
+  <project path="external/tremolo" name="platform/external/tremolo" />
+  <project path="external/webp" name="platform/external/webp" />
+  <project path="external/webrtc" name="platform/external/webrtc" />
+  <project path="external/wpa_supplicant_8" name="platform/external/wpa_supplicant_8" />
+  <project path="external/yaffs2" name="platform/external/yaffs2" />
+  <project path="external/zlib" name="platform/external/zlib" />
+  <project path="external/zxing" name="platform/external/zxing" />
+  <project path="frameworks/av" name="platform/frameworks/av" />
+  <project path="frameworks/base" name="platform/frameworks/base" />
+  <project path="frameworks/native" name="platform/frameworks/native" />
+  <project path="frameworks/wilhelm" name="platform/frameworks/wilhelm" />
+  <project path="hardware/akm" name="platform/hardware/akm" />
+  <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" />
+  <project path="hardware/libhardware" name="platform/hardware/libhardware" />
+  <project path="hardware/ril" name="platform/hardware/ril" />
+  <project path="libcore" name="platform/libcore" />
+  <project path="libnativehelper" name="platform/libnativehelper" groups="pdk-java" />
+  <project path="ndk" name="platform/ndk" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" groups="pdk,linux,arm" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" groups="pdk,linux,arm" />
+  <project path="prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.6" name="platform/prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.6" groups="pdk,linux" />
+  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.7-4.6" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.7-4.6" groups="pdk,linux" />
+  <project path="prebuilts/gcc/linux-x86/x86/i686-linux-android-4.7" name="platform/prebuilts/gcc/linux-x86/x86/i686-linux-android-4.7" groups="pdk,linux,x86" />
+  <project path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.7" name="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.7" groups="pdk,linux,x86" />
+  <project path="prebuilts/misc" name="platform/prebuilts/misc" />
+  <project path="prebuilts/ndk" name="platform/prebuilts/ndk" />
+  <project path="prebuilts/python/linux-x86/2.7.5" name="platform/prebuilts/python/linux-x86/2.7.5" groups="linux" />
+  <project path="prebuilts/qemu-kernel" name="platform/prebuilts/qemu-kernel" />
+  <project path="prebuilts/runtime" name="platform/prebuilts/runtime" />
+  <project path="prebuilts/sdk" name="platform/prebuilts/sdk" />
+  <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" />
+  <project path="system/core" name="platform/system/core" />
+  <project path="system/extras" name="platform/system/extras" />
+  <project path="system/media" name="platform/system/media" />
+  <project path="system/netd" name="platform/system/netd" />
+  <project path="system/security" name="platform/system/security" />
+  <project path="system/vold" name="platform/system/vold" />
+
+  <!-- dolphin specific things -->
+  <project path="device/sprd" name="device/sprd"  />
+  <project path="kernel" name="kernel/common" />
+  <project path="u-boot" name="u-boot" />
+  <project path="vendor/sprd/open-source" name="vendor/sprd/open-source"  />
+  <project path="vendor/sprd/partner" name="vendor/sprd/partner"  />
+  <project path="vendor/sprd/proprietories" name="vendor/sprd/proprietories"  />
+
+</manifest>
