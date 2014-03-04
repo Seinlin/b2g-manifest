@@ -2,6 +2,7 @@
 <manifest>
 
   <include name="base-kk.xml" />
+  <include name="base-aosp-kk.xml"/>
 
   <default remote="caf" revision="refs/tags/android-4.4.2_r1" sync-j="4"/>
 
