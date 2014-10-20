@@ -10,7 +10,7 @@
   <remote fetch="git://github.com/Seinlin/" name="seinlin"/>
 
   <!-- B2G specific things. -->
-  <project name="platform_build" path="build" remote="b2g" revision="b2g-4.4.2_r1">
+  <project name="platform_build" path="build" remote="seinlin" revision="l-preview">
     <copyfile dest="Makefile" src="core/root.mk"/>
   </project> 
   <project name="gaia" path="gaia" remote="mozillaorg" revision="master"/>
@@ -69,6 +69,7 @@
   <project name="platform/external/jhead" path="external/jhead"/>
   <project name="platform/external/jpeg" path="external/jpeg"/>
   <project name="platform/external/junit" path="external/junit"/>
+  <project name="platform/external/libcxx" path="external/libcxx"/>
   <project name="platform/external/libgsm" path="external/libgsm"/>
   <project name="platform/external/liblzf" path="external/liblzf"/>
   <project name="platform/external/libnfc-nxp" path="external/libnfc-nxp"/>
