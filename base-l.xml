@@ -108,6 +108,7 @@
   <project name="platform/external/webrtc" path="external/webrtc"/>
   <project name="platform/external/yaffs2" path="external/yaffs2"/>
   <project name="platform/external/zlib" path="external/zlib"/>
+  <project name="platform/external/jemalloc" path="external/jemalloc"/>
   <project name="platform/frameworks/base" path="frameworks/base"/>
   <project name="platform/frameworks/native" path="frameworks/native"/>
   <project name="platform/frameworks/opt/emoji" path="frameworks/opt/emoji"/>
