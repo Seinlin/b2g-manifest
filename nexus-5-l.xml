@@ -24,4 +24,5 @@
   <project name="platform/hardware/ril" path="hardware/ril"/>
   <project name="platform_system_nfcd" path="system/nfcd" remote="b2g" revision="master"/>
 
+  <project name="gonk-patches" path="patches" remote="seinlin" revision="l-preview"/>
 </manifest>
