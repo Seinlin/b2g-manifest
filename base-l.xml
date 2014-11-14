@@ -80,6 +80,7 @@
   <project name="platform/external/liblzf" path="external/liblzf"/>
   <project name="platform/external/libnfc-nxp" path="external/libnfc-nxp"/>
   <project path="external/libnl" name="platform/external/libnl" />
+  <project path="external/jsoncpp" name="platform/external/jsoncpp" />
   <project path="external/libunwind" name="platform/external/libunwind" />
   <project path="external/compiler-rt" name="platform/external/compiler-rt" />
   <project path="external/libcxxabi" name="platform/external/libcxxabi" />
