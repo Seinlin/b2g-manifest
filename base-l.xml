@@ -10,7 +10,7 @@
   <remote fetch="git://github.com/Seinlin/" name="seinlin"/>
 
   <!-- B2G specific things. -->
-  <project name="platform_build" path="build" remote="seinlin" revision="b2g-5.0.0_r5">
+  <project name="platform_build" path="build" remote="seinlin" revision="b2g-5.0.0_r6">
     <copyfile dest="Makefile" src="core/root.mk"/>
   </project> 
   <project name="gaia" path="gaia" remote="mozillaorg" revision="master"/>
