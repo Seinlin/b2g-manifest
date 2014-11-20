@@ -44,6 +44,20 @@
   <project path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" name="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" />
   <project path="prebuilts/python/darwin-x86/2.7.5" name="platform/prebuilts/python/darwin-x86/2.7.5" groups="darwin" />
   <project path="prebuilts/python/linux-x86/2.7.5" name="platform/prebuilts/python/linux-x86/2.7.5" groups="linux" />
+  <project path="prebuilts/clang/darwin-x86/3.1" name="platform/prebuilts/clang/darwin-x86/3.1" groups="pdk,darwin" />
+  <project path="prebuilts/clang/darwin-x86/3.2" name="platform/prebuilts/clang/darwin-x86/3.2" groups="pdk,darwin" />
+  <project path="prebuilts/clang/darwin-x86/arm/3.3" name="platform/prebuilts/clang/darwin-x86/arm/3.3" groups="arm,darwin,pdk-cw-fs" />
+  <project path="prebuilts/clang/darwin-x86/host/3.4" name="platform/prebuilts/clang/darwin-x86/host/3.4" groups="pdk,darwin" />
+  <project path="prebuilts/clang/darwin-x86/host/3.5" name="platform/prebuilts/clang/darwin-x86/host/3.5" groups="pdk,darwin" />
+  <project path="prebuilts/clang/darwin-x86/mips/3.3" name="platform/prebuilts/clang/darwin-x86/mips/3.3" groups="darwin,mips,pdk-cw-fs" />
+  <project path="prebuilts/clang/darwin-x86/x86/3.3" name="platform/prebuilts/clang/darwin-x86/x86/3.3" groups="darwin,pdk-cw-fs,x86" />
+  <project path="prebuilts/clang/linux-x86/3.1" name="platform/prebuilts/clang/linux-x86/3.1" groups="pdk,linux" />
+  <project path="prebuilts/clang/linux-x86/3.2" name="platform/prebuilts/clang/linux-x86/3.2" groups="pdk,linux" />
+  <project path="prebuilts/clang/linux-x86/arm/3.3" name="platform/prebuilts/clang/linux-x86/arm/3.3" groups="arm,linux,pdk-cw-fs" />
+  <project path="prebuilts/clang/linux-x86/host/3.4" name="platform/prebuilts/clang/linux-x86/host/3.4" groups="pdk,linux" />
+  <project path="prebuilts/clang/linux-x86/host/3.5" name="platform/prebuilts/clang/linux-x86/host/3.5" groups="pdk,linux" />
+  <project path="prebuilts/clang/linux-x86/mips/3.3" name="platform/prebuilts/clang/linux-x86/mips/3.3" groups="linux,mips,pdk-cw-fs" />
+  <project path="prebuilts/clang/linux-x86/x86/3.3" name="platform/prebuilts/clang/linux-x86/x86/3.3" groups="linux,pdk-cw-fs,x86" />
   <project name="device/common" path="device/common"/>
   <project name="device/sample" path="device/sample"/>
   <project name="platform/abi/cpp" path="abi/cpp"/>
@@ -55,11 +69,14 @@
   <project name="platform/external/bsdiff" path="external/bsdiff"/>
   <project name="platform/external/bzip2" path="external/bzip2"/>
   <project name="platform/external/checkpolicy" path="external/checkpolicy"/>
+  <project name="platform/external/clang" path="external/clang"/>
+  <project name="platform/external/compiler-rt" path="external/compiler-rt"/>
   <project name="platform/external/dhcpcd" path="external/dhcpcd"/>
   <project name="platform/external/dnsmasq" path="external/dnsmasq"/>
   <project name="platform/external/e2fsprogs" path="external/e2fsprogs"/>
   <project name="platform/external/elfutils" path="external/elfutils"/>
   <project name="platform/external/expat" path="external/expat"/>
+  <project name="platform/external/f2fs-tools" path="external/f2fs-tools"/>
   <project name="platform/external/fdlibm" path="external/fdlibm"/>
   <project name="platform/external/flac" path="external/flac"/>
   <project name="platform/external/freetype" path="external/freetype"/>
@@ -72,26 +89,26 @@
   <project name="platform/external/ipsec-tools" path="external/ipsec-tools"/>
   <project name="platform/external/iptables" path="external/iptables"/>
   <project name="platform/external/jack" path="external/jack"/>
+  <project name="platform/external/jemalloc" path="external/jemalloc"/>
   <project name="platform/external/jhead" path="external/jhead"/>
   <project name="platform/external/jpeg" path="external/jpeg"/>
+  <project name="platform/external/jsoncpp" path="external/jsoncpp"/>
   <project name="platform/external/junit" path="external/junit"/>
+  <project name="platform/external/libcxxabi" path="external/libcxxabi"/>
   <project name="platform/external/libcxx" path="external/libcxx"/>
   <project name="platform/external/libgsm" path="external/libgsm"/>
   <project name="platform/external/liblzf" path="external/liblzf"/>
   <project name="platform/external/libnfc-nxp" path="external/libnfc-nxp"/>
-  <project path="external/libnl" name="platform/external/libnl" />
-  <project path="external/jsoncpp" name="platform/external/jsoncpp" />
-  <project path="external/libunwind" name="platform/external/libunwind" />
-  <project path="external/compiler-rt" name="platform/external/compiler-rt" />
-  <project path="external/libcxxabi" name="platform/external/libcxxabi" />
-  <project path="external/f2fs-tools" name="platform/external/f2fs-tools" remote="aosp"/>
-  <project path="external/libopus" name="platform/external/libopus" />
+  <project name="platform/external/libnl" path="external/libnl"/>
   <project name="platform/external/libogg" path="external/libogg"/>
+  <project name="platform/external/libopus" path="external/libopus"/>
   <project name="platform/external/libpcap" path="external/libpcap"/>
   <project name="platform/external/libpng" path="external/libpng"/>
   <project name="platform/external/libselinux" path="external/libselinux"/>
   <project name="platform/external/libsepol" path="external/libsepol"/>
+  <project name="platform/external/libunwind" path="external/libunwind"/>
   <project name="platform/external/libvpx" path="external/libvpx"/>
+  <project name="platform/external/llvm" path="external/llvm"/>
   <project name="platform/external/mdnsresponder" path="external/mdnsresponder"/>
   <project name="platform/external/mksh" path="external/mksh"/>
   <project name="platform/external/netcat" path="external/netcat"/>
@@ -114,14 +131,13 @@
   <project name="platform/external/tcpdump" path="external/tcpdump"/>
   <project name="platform/external/tinyalsa" path="external/tinyalsa"/>
   <project name="platform/external/tinycompress" path="external/tinycompress"/>
-  <project name="platform/external/tinyxml" path="external/tinyxml"/>
   <project name="platform/external/tinyxml2" path="external/tinyxml2"/>
+  <project name="platform/external/tinyxml" path="external/tinyxml"/>
   <project name="platform/external/tremolo" path="external/tremolo"/>
   <project name="platform/external/webp" path="external/webp"/>
   <project name="platform/external/webrtc" path="external/webrtc"/>
   <project name="platform/external/yaffs2" path="external/yaffs2"/>
   <project name="platform/external/zlib" path="external/zlib"/>
-  <project name="platform/external/jemalloc" path="external/jemalloc"/>
   <project name="platform/frameworks/base" path="frameworks/base"/>
   <project name="platform/frameworks/native" path="frameworks/native"/>
   <project name="platform/frameworks/opt/emoji" path="frameworks/opt/emoji"/>
