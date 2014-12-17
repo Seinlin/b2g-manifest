@@ -6,5 +6,6 @@
   <project name="platform/external/icu" path="external/icu"/>
   <project name="platform_frameworks_av" path="frameworks/av" remote="b2g" revision="b2g-5.0.0_r6"/>
   <project name="platform_system_core" path="system/core" remote="b2g" revision="b2g-5.0.0_r6"/>
+  <project name="platform_frameworks_base" path="frameworks/base" remote="b2g" revision="b2g-5.0.0_r6"/>
 
 </manifest>
