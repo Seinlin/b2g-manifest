@@ -10,11 +10,11 @@
   <remote fetch="git://github.com/Seinlin/" name="seinlin"/>
 
   <!-- B2G specific things. -->
-  <project name="platform_build" path="build" remote="seinlin" revision="b2g-5.0.0_r6">
+  <project name="platform_build" path="build" remote="b2g" revision="b2g-5.0.0_r6">
     <copyfile dest="Makefile" src="core/root.mk"/>
   </project> 
   <project name="gaia" path="gaia" remote="mozillaorg" revision="master"/>
-  <project name="gecko" path="gecko" remote="mozillaorg" revision="a058458e7d9294f4c9325ba54c1f859b86be838e"/>
+  <project name="gecko" path="gecko" remote="mozillaorg" revision="master"/>
   <project name="fake-libdvm" path="dalvik" remote="b2g" revision="master"/>
   <project name="gonk-misc" path="gonk-misc" remote="b2g" revision="master"/>
   <project name="librecovery" path="librecovery" remote="b2g" revision="master"/>
@@ -85,12 +85,14 @@
   <project name="platform/external/giflib" path="external/giflib"/>
   <project name="platform/external/gtest" path="external/gtest"/>
   <project name="platform/external/harfbuzz_ng" path="external/harfbuzz_ng"/>
+  <project name="platform/external/icu" path="external/icu"/>
   <project name="platform/external/iproute2" path="external/iproute2"/>
   <project name="platform/external/ipsec-tools" path="external/ipsec-tools"/>
   <project name="platform/external/iptables" path="external/iptables"/>
   <project name="platform/external/jack" path="external/jack"/>
   <project name="platform/external/jemalloc" path="external/jemalloc"/>
   <project name="platform/external/jhead" path="external/jhead"/>
+  <project name="platform/external/jsmn" path="external/jsmn"/>
   <project name="platform/external/jpeg" path="external/jpeg"/>
   <project name="platform/external/jsoncpp" path="external/jsoncpp"/>
   <project name="platform/external/junit" path="external/junit"/>
@@ -138,6 +140,8 @@
   <project name="platform/external/webrtc" path="external/webrtc"/>
   <project name="platform/external/yaffs2" path="external/yaffs2"/>
   <project name="platform/external/zlib" path="external/zlib"/>
+  <project name="platform/frameworks/av" path="frameworks/av"/>
+  <project name="platform/frameworks/base" path="frameworks/base"/>
   <project name="platform/frameworks/native" path="frameworks/native"/>
   <project name="platform/frameworks/opt/emoji" path="frameworks/opt/emoji"/>
   <project name="platform/frameworks/wilhelm" path="frameworks/wilhelm"/>
@@ -151,6 +155,7 @@
   <project name="platform/prebuilts/qemu-kernel" path="prebuilts/qemu-kernel"/>
   <project name="platform/prebuilts/sdk" path="prebuilts/sdk"/>
   <project name="platform/prebuilts/tools" path="prebuilts/tools"/>
+  <project name="platform/system/core" path="system/core"/>
   <project name="platform/system/extras" path="system/extras"/>
   <project name="platform/system/media" path="system/media"/>
   <project name="platform/system/netd" path="system/netd"/>
