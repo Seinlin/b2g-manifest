@@ -4,7 +4,6 @@
   <include name="base-l-aosp.xml"/>
 
   <remote name="seinlin" fetch="git://github.com/Seinlin/" />
-  <remote name="sony" fetch="git://github.com/sonyxperiadev/" />
 
   <default remote="caf" revision="refs/tags/android-5.1.1_r1" sync-j="4"/>
 
@@ -37,8 +36,8 @@
   <project path="device/sony/leo" name="device-sony-leo" groups="device" remote="seinlin" revision="lmr1" />
   <project path="vendor/sony/kernel" name="vendor-sony-kernel" groups="device" remote="seinlin" revision="lmr1" />
 
-  <project path="device/sony/shinano" name="device-sony-shinano" groups="device" remote="sony" revision="master" />
-  <project path="vendor/sony/system/thermanager" name="thermanager" groups="device" remote="sony" revision="master" />
-  <project path="vendor/sony/system/mkqcdtbootimg" name="mkqcdtbootimg" groups="device" remote="sony" revision="master" />
+  <project path="device/sony/shinano" name="device-sony-shinano" groups="device" remote="seinlin" revision="master" />
+  <project path="vendor/sony/system/thermanager" name="thermanager" groups="device" remote="seinlin" revision="master" />
+  <project path="vendor/sony/system/mkqcdtbootimg" name="mkqcdtbootimg" groups="device" remote="seinlin" revision="master" />
 
 </manifest>
