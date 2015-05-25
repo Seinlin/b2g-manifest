@@ -10,7 +10,6 @@
   <!-- Platform common things -->
   <project name="device/generic/armv7-a-neon" path="device/generic/armv7-a-neon"/>
   <project name="platform/external/libxml2" path="external/libxml2"/>
-  <project name="platform/external/libnfc-nci" path="external/libnfc-nci"/>
   <project name="platform/external/wpa_supplicant_8" path="external/wpa_supplicant_8"/>
   <project name="platform/hardware/broadcom/wlan" path="hardware/broadcom/wlan"/>
   <project name="platform/hardware/qcom/audio" path="hardware/qcom/audio"/>
@@ -32,6 +31,9 @@
   <project name="codeaurora_kernel_msm" path="kernel" remote="seinlin" revision="shinano-mr1"/>
 
   <!-- Shinano/Arise specific things -->
+  <remove-project name="platform/hardware/libhardware"/>
+  <project name="platform_hardware_libhardware" path="hardware/libhardware" remote="seinlin" revision="lmr1"/>
+  <project name="platform_external_libnfc-nci" path="external/libnfc-nci" remote="seinlin" revision="lmr1"/>
   <project path="device/sony/aries" name="device-sony-aries" groups="device" remote="seinlin" revision="lmr1" />
   <project path="device/sony/leo" name="device-sony-leo" groups="device" remote="seinlin" revision="lmr1" />
   <project path="vendor/sony/kernel" name="vendor-sony-kernel" groups="device" remote="seinlin" revision="lmr1" />
