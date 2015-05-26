@@ -28,7 +28,7 @@
   <project name="platform_system_nfcd" path="system/nfcd" remote="b2g" revision="master"/>
   <project name="timekeep" path="external/timekeep" remote="b2g" revision="master"/>
 
-  <project name="codeaurora_kernel_msm" path="kernel" remote="seinlin" revision="shinano-mr1"/>
+  <project name="codeaurora_kernel_msm" path="kernel" remote="seinlin" revision="shinano-l"/>
 
   <!-- Shinano/Arise specific things -->
   <remove-project name="platform/hardware/libhardware"/>
