@@ -36,7 +36,6 @@
   <project name="platform_external_libnfc-nci" path="external/libnfc-nci" remote="seinlin" revision="lmr1"/>
   <project path="device/sony/aries" name="device-sony-aries" groups="device" remote="seinlin" revision="lmr1" />
   <project path="device/sony/leo" name="device-sony-leo" groups="device" remote="seinlin" revision="lmr1" />
-  <project path="vendor/sony/kernel" name="vendor-sony-kernel" groups="device" remote="seinlin" revision="lmr1" />
 
   <project path="device/sony/shinano" name="device-sony-shinano" groups="device" remote="seinlin" revision="lmr1" />
   <project path="vendor/sony/system/thermanager" name="thermanager" groups="device" remote="seinlin" revision="lmr1" />
