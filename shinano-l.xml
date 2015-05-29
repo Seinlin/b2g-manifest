@@ -5,7 +5,7 @@
 
   <remote name="seinlin" fetch="git://github.com/Seinlin/" />
 
-  <default remote="caf" revision="refs/tags/android-5.1.1_r1" sync-j="4"/>
+  <default remote="caf" revision="refs/tags/android-5.1.1_r3" sync-j="4"/>
 
   <!-- Platform common things -->
   <project name="device/generic/armv7-a-neon" path="device/generic/armv7-a-neon"/>
@@ -19,6 +19,7 @@
   <project name="platform/system/qcom" path="system/qcom" revision="l_master"/>
   <project name="platform/hardware/qcom/msm8x74" path="hardware/qcom/msm8x74"/>
   <project name="platform/hardware/ril" path="hardware/ril"/>
+  <project name="platform/hardware/broadcom/libbt" path="hardware/broadcom/libbt"/>
 
   <!--
   <project name="platform/hardware/qcom/camera" path="hardware/qcom/camera" revision="l_LNX.LA.3.6"/>
