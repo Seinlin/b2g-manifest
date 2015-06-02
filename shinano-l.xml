@@ -29,16 +29,16 @@
   <project name="platform_system_nfcd" path="system/nfcd" remote="b2g" revision="master"/>
   <project name="timekeep" path="external/timekeep" remote="b2g" revision="master"/>
 
-  <project name="codeaurora_kernel_msm" path="kernel" remote="seinlin" revision="shinano-l"/>
+  <project name="codeaurora_kernel_msm" path="kernel" remote="seinlin" revision="bug-1163550"/>
 
   <!-- Shinano/Arise specific things -->
   <remove-project name="platform/hardware/libhardware"/>
   <project name="platform_hardware_libhardware" path="hardware/libhardware" remote="seinlin" revision="lmr1"/>
   <project name="platform_external_libnfc-nci" path="external/libnfc-nci" remote="seinlin" revision="lmr1"/>
-  <project path="device/sony/aries" name="device-sony-aries" groups="device" remote="seinlin" revision="lmr1" />
-  <project path="device/sony/leo" name="device-sony-leo" groups="device" remote="seinlin" revision="lmr1" />
+  <project path="device/sony/aries" name="device-sony-aries" groups="device" remote="seinlin" revision="bug-1163550" />
+  <project path="device/sony/leo" name="device-sony-leo" groups="device" remote="seinlin" revision="bug-1163550" />
 
-  <project path="device/sony/shinano" name="device-sony-shinano" groups="device" remote="seinlin" revision="lmr1" />
+  <project path="device/sony/shinano" name="device-sony-shinano" groups="device" remote="seinlin" revision="bug-1163550" />
   <project path="vendor/sony/system/thermanager" name="thermanager" groups="device" remote="seinlin" revision="lmr1" />
   <project path="vendor/sony/system/mkqcdtbootimg" name="mkqcdtbootimg" groups="device" remote="seinlin" revision="lmr1" />
 
