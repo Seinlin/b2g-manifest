@@ -33,8 +33,8 @@
 
   <!-- Shinano/Arise specific things -->
   <remove-project name="platform/hardware/libhardware"/>
-  <project name="platform_hardware_libhardware" path="hardware/libhardware" remote="seinlin" revision="lmr1"/>
-  <project name="platform_external_libnfc-nci" path="external/libnfc-nci" remote="seinlin" revision="lmr1"/>
+  <project name="platform_hardware_libhardware" path="hardware/libhardware" remote="b2g" revision="sony-aosp-l"/>
+  <project name="platform_external_libnfc-nci" path="external/libnfc-nci" remote="b2g" revision="sony-aosp-l"/>
   <project path="device/sony/aries" name="device-sony-aries" groups="device" remote="seinlin" revision="bug-1163550" />
   <project path="device/sony/leo" name="device-sony-leo" groups="device" remote="seinlin" revision="bug-1163550" />
 
