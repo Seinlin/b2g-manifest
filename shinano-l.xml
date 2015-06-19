@@ -19,7 +19,7 @@
   <project name="platform/system/qcom" path="system/qcom" revision="l_master"/>
   <project name="platform/hardware/qcom/msm8x74" path="hardware/qcom/msm8x74"/>
   <project name="platform/hardware/ril" path="hardware/ril"/>
-  <project name="platform/hardware/broadcom/libbt" path="hardware/broadcom/libbt"/>
+  <project name="platform_hardware_broadcom_libbt" path="hardware/broadcom/libbt" remote="b2g" revision="b2g-5.1.1_r3"/>
 
   <!--
   <project name="platform/hardware/qcom/camera" path="hardware/qcom/camera" revision="l_LNX.LA.3.6"/>
@@ -39,7 +39,7 @@
   <project path="device/sony/leo" name="device-sony-leo" groups="device" remote="seinlin" revision="bug-1163550" />
 
   <project path="device/sony/shinano" name="device-sony-shinano" groups="device" remote="seinlin" revision="bug-1163550" />
-  <project path="vendor/sony/system/thermanager" name="thermanager" groups="device" remote="seinlin" revision="lmr1" />
-  <project path="vendor/sony/system/mkqcdtbootimg" name="mkqcdtbootimg" groups="device" remote="seinlin" revision="lmr1" />
+  <project path="vendor/sony/system/thermanager" name="thermanager" groups="device" remote="b2g" revision="sony-aosp-l" />
+  <project path="vendor/sony/system/mkqcdtbootimg" name="mkqcdtbootimg" groups="device" remote="b2g" revision="sony-aosp-l" />
 
 </manifest>
