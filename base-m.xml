@@ -16,14 +16,14 @@
   <project name="apitrace" path="external/apitrace" remote="apitrace" revision="master"/>
   <project name="fake-libdvm" path="dalvik" remote="b2g" revision="master"/>
   <project name="fake-qemu-kernel" path="prebuilts/qemu-kernel" remote="b2g" revision="master"/>
-  <project name="gonk-misc" path="gonk-misc" remote="b2g" revision="master"/>
+  <project name="gonk-misc" path="gonk-misc" remote="b2g" revision="refs/pull/252/head"/>
   <project name="librecovery" path="librecovery" remote="b2g" revision="master"/>
   <project name="moztt" path="external/moztt" remote="b2g" revision="master"/>
-  <project name="platform_build" path="build" remote="b2g" revision="b2g-6.0.0_r1">
+  <project name="platform_build" path="build" remote="b2g" revision="refs/pull/131/head">
     <copyfile dest="Makefile" src="core/root.mk"/>
   </project>
   <project name="platform_hardware_libhardware_moz" path="hardware/libhardware_moz" remote="b2g" revision="master"/>
-  <project name="platform_prebuilts_misc" path="prebuilts/misc" remote="b2g" revision="b2g-6.0.0_r1"/>
+  <project name="platform_prebuilts_misc" path="prebuilts/misc" remote="b2g" revision="refs/pull/8/head"/>
   <!-- TODO: <project name="platform_system_bluetoothd" path="system/bluetoothd" remote="b2g" revision="master"/> -->
   <project name="platform_system_libfdio" path="system/libfdio" remote="b2g" revision="master"/>
   <project name="rilproxy" path="rilproxy" remote="b2g" revision="master"/>
